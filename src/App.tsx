@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Button, { ButtonType, ButtonSize } from './components/Button/button'
+import Alert from './components/Alert/alert';
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* Button
+        <Button> Hello </Button>
+        <Button disabled> Disabled Button </Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}> Large Primary </Button>
+        <Button btnType={ButtonType.Danger} size={ButtonSize.Small}> Small Danger </Button>
+        <Button btnType={ButtonType.Link} href="http://www.baidu.com"> Baidu Link </Button>
+        <Button btnType={ButtonType.Link} href="http://www.baidu.com" disabled> Disabled Link </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -17,7 +22,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        <Alert closeable title="123" content="123"></Alert>
       </header>
     </div>
   );
