@@ -2,7 +2,6 @@ import React, {useContext, FunctionComponentElement, useState} from 'react'
 import classNames from 'classnames'
 import {MenuContext} from './menu'
 import {MenuItemProps} from './menuItem'
-import set = Reflect.set;
 
 export interface SubMenuProps {
     index?: string;

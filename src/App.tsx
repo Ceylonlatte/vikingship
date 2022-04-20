@@ -2,10 +2,15 @@ import React from 'react';
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
 import SubMenu from "./components/Menu/subMenu";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import Icon from "./components/Icon/icon";
+import { fas } from '@fortawesome/free-solid-svg-icons'
+library.add(fas)
 
 const App: React.FC = () => {
     return (
         <div className="App">
+            <Icon icon="arrow-down" theme="primary" size="10x" />
             <header className="App-header">
                 <Menu defaultIndex='0' onSelect={(index) => {alert(index)}}>
                     <MenuItem index='0'>
