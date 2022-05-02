@@ -7,12 +7,11 @@
 //mixin
 @import "mixin";
 
+// animation
+@import "animation";
 // button
 
 @import "../components/Button/style";
-
-// alert
-@import "../components/Alert/style";
 
 // menu
 
@@ -21,4 +20,9 @@
 // icon
 @import "../components/Icon/style";
 
-@import "animation";
+
+//upload
+@import "../components/Upload/style";
+
+//progress
+@import "../components/Progress/style";
